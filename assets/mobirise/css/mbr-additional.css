@@ -682,6 +682,56 @@ body {
 a {
   transition: color 0.6s;
 }
+.cid-uoe7ut3qHr {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: #ffffff;
+}
+.cid-uoe7ut3qHr .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-uoe7ut3qHr .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.cid-uoe7ut3qHr .item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4rem;
+  flex-direction: column;
+}
+.cid-uoe7ut3qHr .icon-box {
+  margin-bottom: 1rem;
+  text-align: center;
+  display: inline-block;
+}
+.cid-uoe7ut3qHr .text-box {
+  text-align: center;
+}
+.cid-uoe7ut3qHr span {
+  font-size: 10rem;
+  color: #6592e6;
+  font-weight: bold;
+  display: block;
+}
+@media (max-width: 991px) {
+  .cid-uoe7ut3qHr .card {
+    margin-bottom: 2rem;
+  }
+  .cid-uoe7ut3qHr .card-wrapper {
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .cid-uoe7ut3qHr span {
+    font-size: 21vw;
+  }
+}
 .cid-uoe0LEiWex {
   background-color: #000000;
 }
