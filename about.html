@@ -10,7 +10,7 @@
   <meta name="description" content="">
   
   
-  <title>Home</title>
+  <title>About</title>
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="assets/theme/css/style.css">
   <link rel="preload" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
-  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=3HrRmd"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=3HrRmd" type="text/css">
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=DjhCnv"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=DjhCnv" type="text/css">
 
   
   
@@ -28,7 +28,7 @@
 </head>
 <body>
   
-  <section data-bs-version="5.1" class="menu menu2 cid-w1O0wFMZUq" once="menu" id="design-block-w1O0wFMZUq">
+  <section data-bs-version="5.1" class="menu menu2 cid-w1O0wFMZUq" once="menu" id="design-block-15">
     
     <nav class="navbar navbar-dropdown navbar-expand-lg">
         <div class="container-fluid">
@@ -265,92 +265,183 @@ function myFunction5() {
 </script>
 </section>
 
-<section data-bs-version="5.1" class="mbr-section cid-DuEKiV10B4" id="design-block-DuEKiV10B4">
+<section class="witsec-search noindex cid-uosJJzFqkD" data-wssearchtitle="| Results for '{searchString}'" data-wssearchbodymaxchars="450" data-wssearchminchars="3" data-wssearchspinner="true" data-wssearchloadmore="true" data-wssearchloadmorebatch="7" id="witsec-search-results-1a" data-rv-view="466">
+  
 
-    
+  
 
-<script>
-var isNS = (navigator.appName == "Netscape") ? 1 : 0;
-if(navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
-function mischandler(){
-return false;
-}
-function mousehandler(e){
-var myevent = (isNS) ? e : event;
-var eventbutton = (isNS) ? myevent.which : myevent.button;
-if((eventbutton==2)||(eventbutton==3)) return false;
-}
-document.oncontextmenu = mischandler;
-document.onmousedown = mousehandler;
-document.onmouseup = mousehandler;
-</script>
+  <div class="container">
+    <div class="row justify-content-center">
+        <div class="title col-md-12">
+            <h3 class="mbr-section-title mbr-fonts-style align-center mb-4 display-5">
+                <strong>Search this website</strong></h3>
+            <p class="mbr-section-text align-center mbr-fonts-style mb-4 display-7">
+                Enter one or more keywords in the field below and search away.<br>If you're curious to what the "database" looks like, <a href="assets/witsec-search/search.json" class="text-primary">click here</a>. It's a simple JSON file.</p>
+        </div>
+    </div>
 
-<div style="padding:1rem; background-color:#c1c1c1;" class="hidden">
-   <div class="align-center">
-              <br>Disable mouse right-click - This line is not published, it's only for ease of access to the blue gear<br>
-				
-    </div></div>
+    <div class="row">
+        <div class="col-lg-8 mx-auto">
+            <form class="mbr-form">
+                <div class="row">
+                    <div class="col-lg col-md col-12">
+                        <input type="text" name="q" class="form-control wsSearchInput" required="" placeholder="Search" minlength="3">
+                    </div>
+                    <div class="mbr-section-btn col-md-auto col"><button type="submit" class="btn btn-primary display-4">Search</button></div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="wsSearchSpinner row justify-content-center mt-4 d-none">
+      <div class="spinner-border">
+        <span class="sr-only"></span>
+      </div>
+    </div>
+
+    <div class="row justify-content-center mt-4">
+      <div class="col-lg-12">
+        <p class="wsSearchResultsFor mbr-fonts-style mb-4 display-7 d-none">
+          Found {searchTotal} result(s) for '{searchString}'.
+        </p>
+
+        <p class="wsSearchNoResults mbr-fonts-style mb-4 display-7 d-none">
+          No results were found for '{searchString}'.
+        </p>
+
+        <div class="wsSearchResults d-none">
+          <div class="wsSearchResultTemplate mb-4">
+            <p class="wsSearchResultTemplateHeader mb-0 mbr-fonts-style display-7">{index}.&nbsp;<a data-href="{link}" style="font-weight: bold;">{header:This <mark>dummy</mark> header will be replaced.}</a></p>
+            <p class="wsSearchResultTemplateBody mb-0 mbr-fonts-style display-7">{body:This is just some example text that helps you understand what your search results will look like. In this example, we're searching for the word '<mark>dummy</mark>', which is highlighted, if you have highlighting enabled. This body tag will be replaced with the actual body text of a search result, so you don't have to change this text.}<br><a data-href="{link}" class="text-primary"><em>{page:example.html}</em></a></p>
+          </div>
+        </div>
+
+        <div class="wsSearchLoadMore d-none">
+          <div class="mbr-section-btn col-md-auto col text-center"><a class="btn wsSearchLoadMoreButton btn-primary display-4">Load More</a></div>
+        </div>
+
+        <div class="wsSearchError mt-4 alert alert-danger col-12 mbr-fonts-style display-7 d-none">
+          An error occured. Please try again.</div>
+      </div>
+    </div>
+
+  </div>
 </section>
 
-<section data-bs-version="5.1" class="header14 cid-uosl8LcsFD mbr-fullscreen" id="header14-12">
-
+<section data-bs-version="5.1" class="content6 cid-uosGvPitvE" id="content6-17">
     
-
-    
-    
-
     <div class="container">
-        <div class="row justify-content-center align-items-center">
-            <div class="col-12 col-md-6 image-wrapper">
-                <img src="assets/images/tc-productions-logo-2.png" alt="Mobirise Website Builder">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-10">
+                <hr class="line">
+                <p class="mbr-text align-center mbr-fonts-style my-4 display-5">
+                    <em>Est. 2024</em></p>
+                <hr class="line">
             </div>
-            <div class="col-12 col-md">
-                <div class="text-wrapper">
-                    <h1 class="mbr-section-title mbr-fonts-style mb-3 display-2"><strong>TonyCuts Productions™</strong></h1>
-                    <p class="mbr-text mbr-fonts-style display-7">
-                        Indie film production company</p>
-                    
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="content5 cid-uosGL0w2Ju" id="content5-18">
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-10">
+                
+                <h4 class="mbr-section-subtitle mbr-fonts-style mb-4 display-5">Our Story</h4>
+                <p class="mbr-text mbr-fonts-style display-7">
+                    You can use content blocks to arrange your articles, large texts, instructions. Combine these blocks with media blocks to add illustrations and video tutorials. You can use various content blocks to work with your text. Add quotations, lists, buttons. Select your text to change its formatting or add links. Mobirise is a simple website builder that helps you create amazing web pages without knowing any code.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="team1 cid-uosGYmmuGy" id="team1-19">
+    
+
+    
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <h3 class="mbr-section-title mbr-fonts-style align-center mb-4 display-2">
+                    <strong>Our team</strong>
+                </h3>
+                
+            </div>
+            <div class="item features-image mb-4 col-12 col-md-4">
+                <div class="item-wrapper">
+                    <div class="image-wrap">
+                        <img src="assets/images/fpto2597-1.png" alt="Anthony Lakey">
+                    </div>
+                    <div class="content-wrap">
+                        <h5 class="mbr-section-title card-title mbr-fonts-style align-center m-0 display-5">
+                            <strong>Anthony Lakey</strong></h5>
+                        <h6 class="mbr-role mbr-fonts-style align-center mb-3 display-4">
+                            <strong>Director &amp; CEO</strong></h6>
+                        <p class="card-text mbr-fonts-style align-center display-7">
+                            No special actions required, all sites you make with Mobirise are mobile-friendly.
+                        </p>
+                        <div class="social-row display-7">
+                            <div class="soc-item">
+                                <a href="https://www.facebook.com/Mobirise/" target="_blank">
+                                    <span class="mbr-iconfont socicon-instagram socicon"></span>
+                                </a>
+                            </div>
+                            <div class="soc-item">
+                                <a href="https://twitter.com/mobirise" target="_blank">
+                                    <span class="mbr-iconfont socicon-facebook socicon"></span>
+                                </a>
+                            </div>
+                            
+                            
+                            
+                        </div>
+                        
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
 
-<section data-bs-version="5.1" class="form9 cid-uosmyxonKp" id="form9-13">
-    
-    
-    <div class="container-fluid">
-        <div class="mbr-section-head">
-            <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
-                <strong>Don't Miss Out On Upcoming Films!</strong></h3>
+            <div class="item features-image mb-4 col-12 col-md-4">
+                <div class="item-wrapper">
+                    <div class="image-wrap">
+                        <img src="assets/images/zach-headshot-2.jpeg" alt="Zachary Dorman">
+                    </div>
+                    <div class="content-wrap">
+                        <h5 class="mbr-section-title card-title mbr-fonts-style align-center m-0 display-5">
+                            <strong>Zachary Dorman</strong></h5>
+                        <h6 class="mbr-role mbr-fonts-style align-center mb-3 display-4">
+                            <strong>Manager</strong>
+                        </h6>
+                        <p class="card-text mbr-fonts-style align-center display-7">
+                            Use Mobirise website building software to create multiple sites for your clients.
+                        </p>
+                        <div class="social-row display-7">
+                            <div class="soc-item">
+                                <a href="https://www.facebook.com/Mobirise/" target="_blank">
+                                    <span class="mbr-iconfont socicon socicon-facebook"></span>
+                                </a>
+                            </div>
+                            <div class="soc-item">
+                                <a href="https://twitter.com/mobirise" target="_blank">
+                                    <span class="mbr-iconfont socicon socicon-twitter"></span>
+                                </a>
+                            </div>
+                            
+                            
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
             
         </div>
-        <div class="row justify-content-center mt-4">
-            <div class="col-lg-8 mx-auto mbr-form" data-form-type="formoid">
-                <form action="https://mobirise.eu/" method="POST" class="mbr-form form-with-styler mx-auto" data-form-title="Form Name"><input type="hidden" name="email" data-form-email="true" value="DZ2T9f+E5nAH4fOT77EWkBK4VnC9JihqFvmaOO+cPrzRn/s+imt6cpO6Sy8/1As0+DVtryzbkvT8m4/NYNZqN0fgDPTNz6Ha0+z2zxuu0Q66PfFr9lrh+JTPI0jTlDZY">
-                    <div class="row">
-                        <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thank you! You will be sent a confirmation email soon.</div>
-                        <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">Oops...! some problem!</div>
-                    </div>
-                    <div class="dragArea row">
-                        <div class="col-lg-12">
-                            <p class="mbr-text mbr-fonts-style align-center mb-4 display-7"> Subscribe to our mailing list to be notified when new films are released! <strong>Cancel anytime!</strong></p>
-                        </div>
-                        <div class="col-lg-4 col-md-12 col-sm-12 form-group mb-3" data-for="name">
-                            <input type="text" name="name" placeholder="Name" data-form-field="name" class="form-control" value="" id="name-form9-13">
-                        </div>
-                        <div data-for="email" class="col-lg-4 col-md-12 col-sm-12 form-group mb-3">
-                            <input type="email" name="email" placeholder="Email" data-form-field="email" class="form-control" value="" id="email-form9-13">
-                        </div>
-                        <div class="col-lg-4 col-md-12 col-sm-12 mbr-section-btn align-center"><button type="submit" class="btn btn-black display-4">Submit</button></div>
-                    </div>
-                </form>
-            </div>
-        </div>
     </div>
 </section>
 
-<section data-bs-version="5.1" class="footer3 cid-uoeav6F6Kd mbr-reveal" once="footers" id="footer3-i">
+<section data-bs-version="5.1" class="footer3 cid-uoeav6F6Kd mbr-reveal" once="footers" id="footer3-16">
 
     
 
@@ -404,7 +495,7 @@ document.onmouseup = mousehandler;
             </div>
         </div>
     </div>
-</section><section><a href="https://mobiri.se"></a><a href="https://mobiri.se"></a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/theme/js/script.js"></script>  <script src="assets/formoid/formoid.min.js"></script>  
+</section><section><a href="https://mobiri.se"></a><a href="https://mobiri.se"></a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/witsec-search/search.js?v=1"></script>  <script src="assets/theme/js/script.js"></script>  
   
   
   <input name="animation" type="hidden">
